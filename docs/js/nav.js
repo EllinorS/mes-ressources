@@ -32,6 +32,8 @@ if(navContainer) {
 }
 
 
+//nav sidebar profile redacteur
+
 export const navSidebar = document.getElementById('sidebar-container')
 
 if(navSidebar) {
@@ -96,3 +98,24 @@ if(navSidebar) {
 }
 
 
+// FOOTER
+
+export const footerContainer = document.getElementById('footer-container')
+if(footerContainer) {
+        footerContainer.innerHTML = `              
+        <nav class="nav-footer">
+        <div class="elements-footer">
+            <div><a href="index.html"><img src="../assets/logo-zios-bl.png" width=70rem alt="logo zi open source"></a></div>
+            <div class="contenu-nav">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="index.html">Navigation 1</a></li>
+                <li><a href="index.html">Navigation 2</a></li>
+                <li><a href="index.html">Navigation 3</a></li>
+            </ul>
+            </div>
+            </div>
+            
+      </nav>`
+
+}

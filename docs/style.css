@@ -8,6 +8,10 @@
   --padding: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +22,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: "montserrat";
-  font-size: 0.9rem;
-  background-color: var(--blanc);
+  font-size: 1rem;
+  background-color: var(--bleuClair);
   grid-template-areas:
     "header"
     "main"
@@ -28,32 +32,78 @@ body {
 
 h1 {
   font-family: "gotham";
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-style: italic;
   letter-spacing: 1px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 h2 {
   font-family: "gotham";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
+h3 {
+  font-family: "gotham";
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-family: "gotham";
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
 .container {
-  max-width: 1000px;
+  max-width: 900px;
+}
+
+.cta-btn a {
+  text-decoration: none;
+  color: var(--blanc);
+  background-color: var(--noir);
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: var(--border-radius);
+}
+
+.cta-btn a:hover {
+  text-decoration: none;
+  color: var(--blanc);
+  background-color: var(--bleu);
+  padding: 7px;
+  border-radius: var(--border-radius);
+}
+
+.scrolltotop {
+  position: fixed;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  right: 20px;
+  bottom: 20px;
+  height: 40px;
+  width: 40px;
+  font-size: 1rem;
+  background-color: var(--noir);
+  color: var(--blanc);
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 50%;
+  z-index: 99;
 }
 
-.cta-btn a{
-    text-decoration: none;
-    color:var(--blanc);
-    background-color: var(--noir);
-    padding: 7px;
-    border-radius: var(--border-radius);
+.scrolltotop:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
 }
-
 
 /* NAVIGATION */
 .header {
@@ -138,30 +188,144 @@ h2 {
   font-weight: 700;
 }
 
-/* fin navigation user-redacteur */
+/* FOOTER */
 
+.footer {
+  grid-area: footer;
+  padding: var(--padding);
+  background-color: var(--bleu);
+  height: 30vh;
+  margin-top:-12vh;
+  display: grid;
+  align-items: end;
+
+}
+
+.elements-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.elements-footer li,
+.elements-footer h4,
+.elements-footer a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--blanc);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contenu-nav h4 {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+}
+
+main {
+  grid-area: main;
+}
 /* HERO */
 
 .hero {
   position: relative;
-  height: 50vh;
+  margin-top: -5vh;
+  height: 60vh;
   background-color: var(--blanc);
-  padding-top: 5vh;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
   text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding: var(--padding);
 }
 
 .img-1 img {
   margin-top: -20vh;
   width: 100vw;
-  height:40vh;
+  height: 60vh;
   object-fit: cover;
-  object-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  object-position: top center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
+/* BLOC USP */
 
+/* cartes usp */
+.usp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container-usp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  gap: 20px;
+}
+.usp-card img {
+  border-radius: var(--border-radius);
+}
+
+/* BLOC CONTACT FORM */
+
+.contact-form {
+  background-color: var(--blanc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.contact {
+  width: 70vw;
+  padding-top:15vh;
+  padding-bottom:15vh;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: var(--border-radius);
+  border: none;
+  width: 100%;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
+  background: none;
+  border: 2px solid var(--bleu);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form button {
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  background: none;
+  border: 2px solid var(--bleu);
+  color: var(--noir);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--bleu);
+}
+
+@media (max-width: 768px) {
+}

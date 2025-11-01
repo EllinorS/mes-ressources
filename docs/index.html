@@ -16,9 +16,7 @@
       type="image/x-icon" />
   </head>
   <body>
-
     <header class="header" id="header">
-
       <div id="nav-container"></div>
     </header>
 
@@ -26,51 +24,97 @@
       <div id="sidebar-container"></div>
     </aside>
 
+    <a href="#" id="scrolltotop" class="scrolltotop">˄</a>
+
     <!-- MAIN -->
-<main>
+    <main>
+      <!-- HERO -->
 
-<!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container" id="container-hero">
+          <div>
+            <h1>h1 Lorem Ipsum dolor</h1>
+          </div>
+          <h2>h2 Lorem Ipsum</h2>
+          <p>
+            Nam at magna interdum sem iaculis consequat at a nibh sodales magna
+            at felis efficitur aliquam sed sit amet nisi. Vivamus sodales magna
+            at felis efficitur aliquam sed sit amet nisi. Nam at magna interdum
+            sem iaculis consequat at a nibh
+          </p>
+          <br />
 
-    <section class="hero" id="hero">
-        <div class="container" id="container"> 
-  <div>
-    <h1>h1 Lorem Ipsum dolor</h1>
-  </div>
-    <div class="">
-    <h2>h2 Lorem Ipsum</h2>
-    <p>Nam at magna interdum sem iaculis consequat at a nibh. <br> Vivamus sodales magna at felis efficitur aliquam sed sit amet nisi.
-    </p>
-    <div class="cta-btn"><a href="#">Learn More</a></div>
-  </div>
-  </div>
-</section>
+          <div class="cta-btn"><a href="#">Learn More</a></div>
+        </div>
+      </section>
 
-<!-- IMG -->
-<section class="img-1" id="img-1"> 
-<img src="../assets/img-home.jpg" alt="">
-</section>
+      <!-- IMG -->
+      <section class="img-1" id="img-1">
+        <img src="../assets/img-home.jpg" alt="" />
+      </section>
 
-<!-- UNIQUE SELLIING POINTS -->
+      <!-- UNIQUE SELLIING POINTS -->
 
-    <section class="hero" id="hero">
-        <div class="container" id="container"> 
-  <div>
-    <h1>h1 Lorem Ipsum dolor</h1>
-  </div>
-    <div class="">
-    <h2>h2 Lorem Ipsum</h2>
-    <p>Nam at magna interdum sem iaculis consequat at a nibh. <br> Vivamus sodales magna at felis efficitur aliquam sed sit amet nisi.
-    </p>
-    <div class="cta-btn"><a href="#">Learn More</a></div>
-  </div>
-  </div>
-</section>
+      <section class="usp" id="usp">
+        <div class="container" id="container-hero">
+          <div>
+            <h2>h2 Lorem Ipsum</h2>
+          </div>
 
+          <div class="container-usp" id="container-usp"></div>
+        </div>
+      </section>
 
+      <!-- CONTACT FORM -->
 
-</main>
-    
+      <section id="contact-form" class="contact-form">
+      <section id="contact" class="contact">
+          <h2>Rejoindre le club</h2>
+          <form class="form">
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required />
 
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Votre Email"
+              required />
+<label for="pet-select">- En tant que lecteur ou redacteur ?</label>
+
+<select name="usertype" id="usertype">
+  <option value="">choisir une option</option>
+  <option value="dog">Lecteur</option>
+  <option value="cat">Rédacteur</option>
+</select>
+<br>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Votre mesage "
+              rows="12"
+              required>
+            </textarea>
+            <button type="submit">Envoyer</button>
+          </form>
+      </section>
+            </section>
+
+            <!-- IMG -->
+
+            
+      </nav>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer-container" id="footer-container"></div>
+    </footer>
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
