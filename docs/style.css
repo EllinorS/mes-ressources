@@ -195,10 +195,9 @@ h4 {
   padding: var(--padding);
   background-color: var(--bleu);
   height: 30vh;
-  margin-top:-12vh;
+  margin-top: -12vh;
   display: grid;
   align-items: end;
-
 }
 
 .elements-footer {
@@ -289,11 +288,17 @@ main {
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
-.contact {
-  width: 70vw;
-  padding-top:15vh;
-  padding-bottom:15vh;
+.contact .form-rows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 20px;
+}
 
+.contact {
+  max-width: 900px;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 .contact-form input,
@@ -323,9 +328,109 @@ main {
   cursor: pointer;
 }
 
+.usertype {
+  background: none;
+  background: none;
+  border: 2px solid var(--bleu);
+  color: var(--noir);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+}
+
 .contact-form button:hover {
   background: var(--bleu);
 }
 
 @media (max-width: 768px) {
+
+  /* USP */
+
+
+/* cartes usp */
+.usp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container-usp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  gap: 20px;
+}
+.usp-card img {
+  border-radius: var(--border-radius);
+  width:20vh;
+}
+
+  /* CONTACT FORM */
+
+  .contact-form {
+    background-color: var(--blanc);
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .contact .form-rows {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .contact {
+    max-width: 900px;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border-radius: var(--border-radius);
+    border: none;
+    width: 100%;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    background: none;
+    border: 2px solid var(--bleu);
+  }
+
+  .contact-form label {
+    font-weight: bold;
+  }
+
+  .contact-form button {
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background: none;
+    border: 2px solid var(--bleu);
+    color: var(--noir);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .usertype {
+    background: none;
+    background: none;
+    border: 2px solid var(--bleu);
+    color: var(--noir);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+  }
+
+  .contact-form button:hover {
+    background: var(--bleu);
+  }
 }

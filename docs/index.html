@@ -71,14 +71,24 @@
       <section id="contact" class="contact">
           <h2>Rejoindre le club</h2>
           <form class="form">
-            <label for="name">Nom</label>
+            <div class="form-rows" >
+            <div class="row1">
+            <label for="fname">Prénom</label>
             <input
               type="text"
               id="name"
               name="name"
               placeholder="Votre nom"
               required />
-
+                          <label for="lname">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required />
+</div>
+<div class="row2">
             <label for="email">Email</label>
             <input
               type="text"
@@ -86,13 +96,14 @@
               name="email"
               placeholder="Votre Email"
               required />
-<label for="pet-select">- En tant que lecteur ou redacteur ?</label>
-
-<select name="usertype" id="usertype">
+            <label for="usertype">Status</label><br> 
+<select name="usertype" class="usertype" id="usertype" required>
   <option value="">choisir une option</option>
   <option value="dog">Lecteur</option>
   <option value="cat">Rédacteur</option>
 </select>
+</div>
+</div>
 <br>
             <label for="message">Message</label>
             <textarea
