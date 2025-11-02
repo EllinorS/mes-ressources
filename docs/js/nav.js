@@ -26,7 +26,7 @@ if(navContainer) {
         <div class="nav-container">
             <a href="index.html"><img src="./assets/logo-zios.png" width=40rem alt="logo zi open source"></a>
 <button class="menu-btn" id="menu-btn" aria-label="ouvrir la sidebar"><img src="./assets/nav-loggedin.png" alt=""></button>
-            <a href="index.html"><img src="../assets/icon-profile.png" width=35rem alt="logo zi open source"></a>
+            <a href="index.html"><img src="./assets/icon-profile.png" width=35rem alt="logo zi open source"></a>
       </nav></div>`
 
 }
