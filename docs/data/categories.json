@@ -1,0 +1,117 @@
+{
+  "categories_principales": [
+    {
+      "id": 1,
+      "nom": "Programmation et développement",
+      "image": "./assets/programmation-dev.png",
+      "sous_categories": [
+        { "id": 1, "nom": "Python" },
+        { "id": 2, "nom": "JavaScript" },
+        { "id": 3, "nom": "PHP" },
+        { "id": 4, "nom": "C#" },
+        { "id": 5, "nom": "C++" },
+        { "id": 6, "nom": "Java" },
+        { "id": 7, "nom": "Rust" },
+        { "id": 8, "nom": "Go" },
+        { "id": 9, "nom": "Programmation" },
+        { "id": 10, "nom": "DevOps" },
+        { "id": 11, "nom": "NoCode" },
+        { "id": 12, "nom": "LowCode" },
+        { "id": 13, "nom": "Automatisation" },
+        { "id": 14, "nom": "Testing" },
+        { "id": 15, "nom": "Scrum" },
+        { "id": 16, "nom": "Agilité" }
+      ]
+    },
+    {
+      "id": 2,
+      "nom": "Systèmes et Cloud",
+      "image": "./assets/systeme-cloud.png",
+      "sous_categories": [
+        { "id": 17, "nom": "Informatique" },
+        { "id": 18, "nom": "Matériel" },
+        { "id": 19, "nom": "Systèmes" },
+        { "id": 20, "nom": "Linux" },
+        { "id": 21, "nom": "Windows" },
+        { "id": 22, "nom": "MacOS" },
+        { "id": 23, "nom": "Réseaux" },
+        { "id": 24, "nom": "Cybersécurité" },
+        { "id": 25, "nom": "Sécurité réseau" },
+        { "id": 26, "nom": "Cloud" },
+        { "id": 27, "nom": "Cloud computing" },
+        { "id": 28, "nom": "Cloud Security" },
+        { "id": 29, "nom": "Serveurs" },
+        { "id": 30, "nom": "Administration système" },
+        { "id": 31, "nom": "Maintenance" },
+        { "id": 32, "nom": "Virtualisation" }
+      ]
+    },
+    {
+      "id": 3,
+      "nom": "Données & Intelligence Artificielle",
+      "image": "./assets/donnees-ia.png",
+      "sous_categories": [
+        { "id": 33, "nom": "IA" },
+        { "id": 34, "nom": "Machine Learning" },
+        { "id": 35, "nom": "Deep Learning" },
+        { "id": 36, "nom": "Base de données" },
+        { "id": 37, "nom": "Data" },
+        { "id": 38, "nom": "Big Data" },
+        { "id": 39, "nom": "Blockchain" },
+        { "id": 40, "nom": "Crypto" },
+        { "id": 41, "nom": "IoT" },
+        { "id": 42, "nom": "Robots" },
+        { "id": 43, "nom": "API REST" },
+        { "id": 44, "nom": "GraphQL" }
+      ]
+    },
+    {
+      "id": 4,
+      "nom": "Web et Design",
+      "image": "./assets/web-design.png",
+      "sous_categories": [
+        { "id": 45, "nom": "Web" },
+        { "id": 46, "nom": "Frontend" },
+        { "id": 47, "nom": "Backend" },
+        { "id": 48, "nom": "Mobile" },
+        { "id": 49, "nom": "iOS" },
+        { "id": 50, "nom": "Android" },
+        { "id": 51, "nom": "React" },
+        { "id": 52, "nom": "Vue.js" },
+        { "id": 53, "nom": "Angular" },
+        { "id": 54, "nom": "Next.js" },
+        { "id": 55, "nom": "Node.js" },
+        { "id": 56, "nom": "Express" },
+        { "id": 57, "nom": "UI/UX" },
+        { "id": 58, "nom": "Design" },
+        { "id": 59, "nom": "3D" },
+        { "id": 60, "nom": "Audio" },
+        { "id": 61, "nom": "Vidéo" },
+        { "id": 62, "nom": "Jeux vidéo" },
+        { "id": 63, "nom": "Réalité augmentée" },
+        { "id": 64, "nom": "Réalité virtuelle" },
+        { "id": 65, "nom": "Performance web" },
+        { "id": 66, "nom": "Accessibilité" },
+        { "id": 67, "nom": "SEO" },
+        { "id": 68, "nom": "Marketing digital" },
+        { "id": 69, "nom": "E-commerce" }
+      ]
+    },
+    {
+      "id": 5,
+      "nom": "Entreprise et Innovation",
+      "image": "./assets/entreprise-innovation.png",
+      "sous_categories": [
+        { "id": 70, "nom": "Sciences" },
+        { "id": 71, "nom": "Éducation" },
+        { "id": 72, "nom": "Innovation" },
+        { "id": 73, "nom": "Startups" },
+        { "id": 74, "nom": "Entreprise" },
+        { "id": 75, "nom": "Productivité" },
+        { "id": 76, "nom": "Inspiration" },
+        { "id": 77, "nom": "Freelance" },
+        { "id": 78, "nom": "Emploi tech" }
+      ]
+    }
+  ]
+}

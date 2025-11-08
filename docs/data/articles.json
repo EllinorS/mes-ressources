@@ -1,0 +1,75 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Découvrir la puissance de Python pour l’automatisation",
+      "image": "https://placehold.co/600x300",
+      "description": "Python est un langage polyvalent qui simplifie l’automatisation de nombreuses tâches répétitives.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non justo in ligula varius dignissim. Maecenas sed sagittis lorem. Duis et risus eu erat fringilla volutpat. Donec suscipit sem in turpis tincidunt, non bibendum turpis pretium. Sed tristique, mi ac vestibulum imperdiet, velit libero viverra risus, sit amet vehicula nibh magna id nunc. Fusce in enim id velit sagittis dignissim.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "Python",
+      "date": "2025-11-05"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript moderne : au-delà du navigateur",
+      "image": "https://placehold.co/600x300",
+      "description": "Node.js a permis à JavaScript de sortir du navigateur et de révolutionner le développement backend.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod neque ac tellus luctus, sit amet mattis libero finibus. Quisque eget gravida magna. Pellentesque at malesuada lectus, a facilisis lectus. Integer bibendum massa sit amet commodo faucibus. Suspendisse non justo sed est pretium luctus.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "JavaScript",
+      "date": "2025-11-30"
+    },
+    {
+      "id": 3,
+      "title": "PHP en 2025 : un langage toujours d’actualité",
+      "image": "https://placehold.co/600x300",
+      "description": "Malgré les critiques, PHP reste un pilier du web grâce à son écosystème mature et sa communauté active.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo, ipsum id bibendum finibus, nisl libero viverra turpis, sit amet pharetra justo lorem ac lorem. Mauris blandit eros in sem accumsan, ac cursus leo porttitor. Integer sodales tortor sit amet ante hendrerit malesuada.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "PHP",
+      "date": "2025-11-07"
+    },
+    {
+      "id": 4,
+      "title": "C# et l’écosystème .NET : un duo performant",
+      "image": "https://placehold.co/600x300",
+      "description": "C# et .NET continuent de séduire les entreprises grâce à leur stabilité et leur performance.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus orci vel eros vehicula, in placerat mi eleifend. Curabitur dignissim tempor lacus at tincidunt. In at magna leo. Suspendisse sed nisi nec massa sollicitudin fermentum vel in est.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "C#",
+      "date": "2025-11-08"
+    },
+    {
+      "id": 5,
+      "title": "DevOps : une culture avant tout",
+      "image": "https://placehold.co/600x300",
+      "description": "DevOps ne se résume pas aux outils : c’est une culture de collaboration et d’amélioration continue.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam accumsan risus id lectus fermentum convallis. Pellentesque vel varius ipsum. Nulla ut sapien lectus. Suspendisse imperdiet urna non dictum gravida. Aliquam erat volutpat. Duis non mauris est.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "DevOps",
+      "date": "2025-11-09"
+    },
+    {
+      "id": 6,
+      "title": "L’agilité en entreprise : un état d’esprit",
+      "image": "https://placehold.co/600x300",
+      "description": "Adopter l’agilité, c’est repenser la manière dont les équipes collaborent pour livrer de la valeur.",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et eros sit amet justo fermentum maximus. Aliquam ac tempor libero, nec vehicula tortor. Vestibulum pretium lacus id fermentum commodo. Donec ut felis at sapien ullamcorper consequat.",
+      "categorie": "Programmation et développement",
+      "sous_categorie": "Agilité",
+      "date": "2025-11-01"
+    },
+    {
+      "id": 7,
+      "title": "blablabla",
+      "image": "https://placehold.co/600x300",
+      "description": "test sort date",
+      "contenu": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et eros sit amet justo fermentum maximus. Aliquam ac tempor libero, nec vehicula tortor. Vestibulum pretium lacus id fermentum commodo. Donec ut felis at sapien ullamcorper consequat.",
+      "categorie": "Systemes et cloud",
+      "sous_categorie": "Agilité",
+      "date": "2025-11-22"
+    }
+
+  ]
+}

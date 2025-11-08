@@ -9,7 +9,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 * {
@@ -23,7 +23,7 @@ body {
   grid-template-rows: auto 1fr auto;
   font-family: "montserrat";
   font-size: 1rem;
-  background-color: var(--bleuClair);
+  background-color: var(--blanc);
   grid-template-areas:
     "header"
     "main"
@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   font-family: "gotham";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
@@ -59,8 +59,22 @@ h4 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+
+.section {
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -5vh;
+  height: auto;
+clip-path: polygon(0px 30px, 100% 0px, 100% calc(100% - 30px), 0px 100%);
+}
 .container {
-  max-width: 900px;
+  max-width: 1000px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .cta-btn a {
@@ -78,6 +92,8 @@ h4 {
   color: var(--blanc);
   background-color: var(--bleu);
   padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: var(--border-radius);
 }
 
@@ -194,10 +210,13 @@ h4 {
   grid-area: footer;
   padding: var(--padding);
   background-color: var(--bleu);
-  height: 30vh;
-  margin-top: -12vh;
+  margin-top: -40px;
   display: grid;
   align-items: end;
+  clip-path: polygon(0% 40px, 100% 0%, 100% 100%, 0% 100%);
+}
+.footer-container {
+  padding-top: 2vh;
 }
 
 .elements-footer {
@@ -227,210 +246,233 @@ h4 {
 main {
   grid-area: main;
 }
-/* HERO */
 
 .hero {
-  position: relative;
-  margin-top: -5vh;
-  height: 60vh;
   background-color: var(--blanc);
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  padding: var(--padding);
+}
+
+.img-1 {
+  height: 50vh;
 }
 
 .img-1 img {
-  margin-top: -20vh;
-  width: 100vw;
-  height: 60vh;
+  display: block;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: top center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
-/* BLOC USP */
+/* CARD CATEGORIES  */
 
-/* cartes usp */
+/* page d'accueil */
 .usp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  background-color: var(--bleuClair);
 }
-.container-usp {
+
+.uspContainer.cat-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: var(--padding);
-  gap: 20px;
 }
-.usp-card img {
+
+.card.categorie img,
+.uspCategorie img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
   border-radius: var(--border-radius);
 }
+      /* Page accueil user redacteur */
 
-/* BLOC CONTACT FORM */
+.catScroll {
+  width: 100%;
+  overflow: hidden; /* cache le débordement horizontal du conteneur principal */
+}
 
-.contact-form {
+.cat-container#catContainer {
+  display: flex;
+  gap: 20px; 
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none; 
+}
+
+/* masque la scrollbar sur Chrome/Edge/Safari */
+.cat-container#catContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* chaque carte catégorie */
+.card.categorie {
+  flex: 0 0 auto; /* empêche les cartes de se redimensionner */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px; /* tu peux ajuster selon ton design */
+  height: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* images dans les cartes */
+.card.categorie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* CONTACT FORM */
+
+/* Contact card */
+
+
+.contact-card {
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 2rem;
   background-color: var(--blanc);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: left;
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
-.contact .form-rows {
-  display: flex;
-  justify-content: space-between;
+/* Titre */
+.section.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+/* Formulaire */
+.form {
   width: 100%;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.contact {
-  max-width: 900px;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+/* Ligne prénom + nom */
+.row-names {
+  display: flex;
+  gap: 1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.row-names .field {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tous les champs */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
   padding: 12px;
   border-radius: var(--border-radius);
-  border: none;
-  width: 100%;
-  margin-bottom: 7px;
-  margin-top: 7px;
-
-  background: none;
   border: 2px solid var(--bleu);
+  background: none;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
 }
 
-.contact-form label {
-  font-weight: bold;
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: var(--bleuClair);
 }
 
-.contact-form button {
-  padding: var(--padding);
+/* Bouton */
+button {
+  padding: 12px 24px;
   border-radius: var(--border-radius);
   background: none;
   border: 2px solid var(--bleu);
   color: var(--noir);
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.usertype {
-  background: none;
-  background: none;
-  border: 2px solid var(--bleu);
-  color: var(--noir);
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-}
-
-.contact-form button:hover {
+button:hover {
   background: var(--bleu);
+  color: var(--blanc);
 }
 
-@media (max-width: 768px) {
-
-  /* USP */
-
-
-/* cartes usp */
-.usp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Search Bar */
+.searchBar {
+  background: var(--bleuClair);
+}
+.filterInput {
+  max-width: 300px;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 10px;
 }
-.container-usp {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.filterInput:focus {
+  border-color: var(--blanc);
+}
+
+/* liste articles */
+.cardArticle {
+  display:flex;
+  flex-direction: column;
+  max-width: 600px;
+  height: 300px;
+  position: relative;
   align-items: center;
-  padding: var(--padding);
-  gap: 20px;
-}
-.usp-card img {
+  justify-content: center;
+  padding: 2em;
   border-radius: var(--border-radius);
-  width:20vh;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--blanc);
 }
 
-  /* CONTACT FORM */
+.cardArticle a {
+  text-decoration: none;
+  color: var(--bleu);
+  background-color: var(--bleuClair);
+  margin-top: 20px;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: var(--border-radius);
+}
 
-  .contact-form {
-    background-color: var(--blanc);
-    padding: var(--padding);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-  }
+.cardArticle a:hover {
+  text-decoration: none;
+  color: var(--bleuClair);
+  background-color: var(--bleu);
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: var(--border-radius);
+}
 
-  .contact .form-rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-right: 20px;
-  }
-
-  .contact {
-    max-width: 900px;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 12px;
-    border-radius: var(--border-radius);
-    border: none;
-    width: 100%;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    background: none;
-    border: 2px solid var(--bleu);
-  }
-
-  .contact-form label {
-    font-weight: bold;
-  }
-
-  .contact-form button {
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-    background: none;
-    border: 2px solid var(--bleu);
-    color: var(--noir);
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  .usertype {
-    background: none;
-    background: none;
-    border: 2px solid var(--bleu);
-    color: var(--noir);
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-  }
-
-  .contact-form button:hover {
-    background: var(--bleu);
-  }
+.cardArticle img {
+  width: 100%;
 }
